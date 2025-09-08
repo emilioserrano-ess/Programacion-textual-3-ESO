@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.5.- Módulos | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li class="current-page-parent"><a href="2_introduccin_a_python.html" class="current-page-parent daddy">2.- Introducción a Python</a>
+   <ul>
+      <li><a href="21_primeros_pasos.html" class="no-ch">2.1.- Primeros pasos</a></li>
+      <li><a href="22_variables_listas_y_operadores.html" class="no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li><a href="23_estructuras_condicionales_y_bucles.html" class="no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li><a href="24_funciones.html" class="no-ch">2.4.- Funciones</a></li>
+      <li id="active"><a href="25_mdulos.html" class="active no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li><a href="3_practicamos_con_python.html" class="no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="24_funciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="26_microbit_y_python.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.5.- Módulos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id24">
+<div class="iDevice emphasis0" >
+<div id="ta24_1609_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><img src="img0.18.png" width="298" height="302" style="float: left; margin: 20px;" />  </p>
+<p style="text-align: justify;">Hasta este momento hemos estado usando las palabras claves que forman el esqueleto básico de Python, así como algunas otras funciones específicas que hacen algunas tareas también de carácter general. Sin embargo, Python es un lenguaje de programación tremendamente rico en funcionalidades disponibles a través de módulos que tenemos a nuestra disposición para usar en cualquier momento. Si se quiere obtener un listado exhaustivo de los módulos disponibles, lo más adecuado es consultar la documentación en la web oficial de Python (<a href="http://www.python.org" target="_blank" rel="noopener">www.python.org</a>). </p>
+<p style="text-align: justify;">Por defecto, cualquier instalación de Python ya trae un elevado número de módulos que nos permitirán realizar todo tipo de tareas, pero además podemos instalar módulos desarrollados por terceros para añadir aún más funcionalidad a nuestra instalación. Para comenzar y familiarizarnos con el uso de los módulos vamos a ver qué son, como se usan y cuales son los más habituales cuando uno se está iniciando con Python.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_diary" id="id25">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_diary.png)"><h1 class="iDeviceTitle">Módulos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta25_1610_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Los <strong>módulos</strong> suelen ser colecciones de funciones, constantes, clases, objetos, ... que tenemos agrupados bajo un mismo nombre.</p>
+<p style="text-align: justify;">Ejemplo: En el módulo math, hay disponible funciones para la realización de cálculos matemáticos como logaritmos, exponenciales, raíces, redondeos, trigonometría, m.c.d., etc. </p>
+<p style="text-align: justify;"><strong>¿Cómo se usan los módulos?</strong></p>
+<p style="text-align: justify;">Tenemos dos formas de usar los módulos, dependiendo del número de funciones que vayamos a usar y dependiendo de que no existan interferencias entre diferentes módulos que puedan coincidir los nombres de algunas de las funciones que contengan.</p>
+<div class="exe-fx exe-tabs">
+<h2>Forma 1: import </h2>
+<p style="text-align: justify;">Ejemplo: <strong>import math</strong></p>
+<p style="text-align: justify;">Al usar el <strong>módulo math</strong> de esta manera estamos importando todas las funciones que contiene el módulo y, por tanto, a partir de este momentos todas están disponibles anteponiéndoles el nombre del módulo.</p>
+<p style="text-align: justify;">Ejemplo:</p>
+<p style="text-align: center;"><img src="img0.19.png" width="996" height="124" /></p>
+<h2>Forma 2: from ..... import ......</h2>
+<p style="text-align: justify;">De esta segunda forma, sólo importamos las funciones enumeradas en la importación. Además, en este caso no es necesario anteponer el nombre del módulo para poder hacer uso de la función.</p>
+<p style="text-align: justify;">Ejemplo:</p>
+<p style="text-align: center;"><img src="img1.12.png" width="998" height="127" /></p>
+<p style="text-align: justify;">Una variante de esta segunda forma es: <strong>from math import *</strong> así estamos importando todas las funciones y podemos usarlas directamente sin necesidad de anteponer el nombre del módulo.</p>
+</div>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_letters" id="id26">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_letters.png)"><h1 class="iDeviceTitle">Módulos comunes y de uso frecuente</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta26_1611_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Hablar de módulos frecuentes no tiene mucho sentido puesto que se usan los módulos en función de las tareas que se quieren hacer, por lo tanto, la expresión módulos comunes sólo va a tener sentido en el ámbito de la aplicación que le daremos, que en nuestro caso es un uso académico en los niveles básicos.</p>
+<p style="text-align: justify;">Trabajaremos con los módulos: math, random, time y datetime. </p>
+<div class="exe-fx exe-accordion">
+<h2>Módulo math</h2>
+<p style="text-align: justify;">El <strong>módulo math</strong> es parte de la biblioteca estándar de Python y contiene varias funciones para realizar operaciones matemáticas avanzadas. A diferencia de las operaciones matemáticas básicas que puedes realizar directamente en Python, como sumar, restar o multiplicar, el módulo math te proporciona acceso a funciones matemáticas especializadas que normalmente no están disponibles de forma predeterminada.</p>
+<p style="text-align: justify;">Podemos encontrar una amplia descripción de cada una de las funciones y constantes que incluye este módulo en la documentación de Python.</p>
+<p style="text-align: justify;">La librería math pone a disposición algunas constantes como son los números pi y e.<img src="img0.20.png" width="205" height="104" style="float: right; margin: 20px;" /></p>
+<p style="text-align: justify;"><span style="text-align: left;">La forma de acceder a ellas es anteponiendo el nombre del módulo, </span><span style="text-align: left;">es decir, math.pi y math.e nos dará los valores que observamos en </span><span style="text-align: left;">la imagen:</span></p>
+<p style="text-align: justify;"><span style="text-align: left;">  </span></p>
+<p style="text-align: justify;"><span style="text-align: left;">  </span></p>
+<p style="text-align: justify;"><span style="text-align: left;">Algunas de las funciones a las que podemos acceder son:</span></p>
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong><span style="text-align: left;">math.pow(): </span></strong><span style="text-align: left;">se utiliza para elevar un número a una potencia específica. A diferencia del operador **, esta función siempre devuelve un número flotante.</span></li>
+<li style="text-align: justify;"><strong><span style="text-align: left;">math.sqrt(): </span></strong><span style="text-align: left;">determina la raíz cuadrada de un número.</span></li>
+<li style="text-align: justify;"><span style="text-align: left;"><strong>math.trunc():</strong> elimina la parte decimal de un número, devolviendo solo la parte entera.</span></li>
+<li style="text-align: justify;"><strong>math.floor():</strong> redondea un número hacia abajo al entero más cercano.</li>
+<li style="text-align: justify;"><strong>math.ceil():</strong> redondea un número hacia arriba al entero más cercano.</li>
+<li style="text-align: justify;"><strong>math.fabs():</strong> para obtener el valor absoluto de un número.</li>
+<li style="text-align: justify;"><strong>math.sin():</strong> calcula el seno de un ángulo (en radianes).</li>
+<li style="text-align: justify;"><strong>math.cos():</strong> calcula el coseno de un ángulo.</li>
+<li style="text-align: justify;"><strong>math.tan():</strong> calcula la tangente de un ángulo.</li>
+<li style="text-align: justify;"><strong>math.exp():</strong> calcula el valor de e elevado a una potencia dada.</li>
+<li style="text-align: justify;"><strong>math.log():</strong> calcula el logaritmo natural (base e) de un número.</li>
+<li style="text-align: justify;"><strong>math.log10():</strong> Calcula el logaritmo en base 10 de un número.</li>
+</ul>
+<h2>Módulo random</h2>
+<p style="text-align: justify;">El <strong>módulo random</strong> nos permite disponer de herramientas para la generación de resultados aleatorios dentro de nuestros programas.</p>
+<p style="text-align: justify;">El uso de valores aleatorios es algo muy frecuente en la programación puesto que permite que el programa reaccione de diferentes formas ante una misma situación. Estas herramientas son fundamentales en la elaboración de juegos, simulación de escenarios, pruebas, generación de datos, etc.</p>
+<p style="text-align: justify;">Veamos con un ejemplo algunas de las funciones que resultan útiles dentro del módulo random:</p>
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>random.random():</strong> genera un número decimal aleatorio entre 0 y 1.</li>
+<li style="text-align: justify;"><strong>random.randint(a,b):</strong> genera un número entero aleatorio entre a y b.</li>
+<li style="text-align: justify;"><strong>random.uniform(a,b):</strong> genera un número decimal aleatorio entre a y b.</li>
+<li style="text-align: justify;"><strong>random.choice(conjunto):</strong> elige un elemento del conjunto pasado como argumento.</li>
+</ul>
+<p>Ejemplo: vamos a hacer un programa que genere un número decimal entre 0 y 1; un número entero entre 10 y 100; un número decimal entre 10 y 20; y por último elija un nombre de una lista de nombres que le pasaremos como parámetros.</p>
+<p style="text-align: center;"><img src="img1.13.png" width="1001" height="321" /></p>
+<h2>Módulo time</h2>
+<p style="text-align: justify;">El módulo time nos va a servir para manejar fechas, horas, medir tiempos, etc.</p>
+<p style="text-align: justify;">Generalmente en la mayoría de los programas es necesario introducir datos relacionados con el momento, la fecha o la hora en el que se producen determinados actos. Para estas ocasiones podemos usar este módulo que aunque tiene muchas opciones, las más comunes las vamos a utilizar en los siguientes ejemplos.</p>
+<p style="text-align: justify;">Vamos a hacer un programa que mostrará la fecha y hora en diferentes formatos.</p>
+<p style="text-align: center;"><img src="img2.12.png" width="998" height="184" /></p>
+<p style="text-align: center;"><img src="img3.5.png" width="1002" height="291" /></p>
+<p style="text-align: justify;">A continuación vamos a desarrollar un programa que nos pida introducir una palabra y nos indique el tiempo que hemos tardado en introducir la palabra.</p>
+<p><img src="img4.4.png" width="1001" height="228" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">  </p>
+<p style="text-align: justify;">En algunas ocasiones queremos nuestro programa espere un determinado tiempo, por ejemplo cuando mostramos alguna infomación, es posible que sea necesario dar tiempo al usuario para leerla.</p>
+<p style="text-align: justify;">Dentro del módulo time, disponemos de una función muy útil para este tipo de tareas, se trata de la función<strong> sleep().</strong> A esta función hay que indicarle mediante un parámetro, el número de segundos que deseamos que espere:</p>
+<p style="text-align: justify;"><strong>sleep(2)</strong>, esperará 2 segundos para continuar con la ejecución del programa.</p>
+<h2>Módulo datetime</h2>
+<p style="text-align: justify;">Dentro de las librerías estándar de Python también tenemos otro módulo que nos permite gestionar fechas de una forma un poco más fácil, este es el<br />módulo datetime. </p>
+<p style="text-align: justify;">Este módulo pone a disposición varios objetos (clases) que disponen de muchas características, se trata de <strong>datetime.date, datetime.time y datetime.datetime.</strong></p>
+<p style="text-align: justify;">Tanto el objeto date, como el datetime disponen del método<strong> today().</strong></p>
+<ul>
+<li style="text-align: justify;"><strong>datetime.date.today(): </strong>nos suministra la fecha actual.</li>
+<li style="text-align: justify;"><strong>datetime.datetime.today(): </strong>nos suministra la fecha y la hora actual.</li>
+<li style="text-align: justify;"><strong>weekday():</strong> devuelve un valor numérico que indica el día de la semana teniendo en cuenta que 0=lunes, 1=martes, 2=miércoles, 3=jueves, 4=viernes, 5=sábado y 6=domingo</li>
+</ul>
+</div>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="24_funciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="26_microbit_y_python.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

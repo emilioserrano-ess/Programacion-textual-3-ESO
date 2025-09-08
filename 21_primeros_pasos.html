@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.1.- Primeros pasos | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li class="current-page-parent"><a href="2_introduccin_a_python.html" class="current-page-parent daddy">2.- Introducción a Python</a>
+   <ul>
+      <li id="active"><a href="21_primeros_pasos.html" class="active no-ch">2.1.- Primeros pasos</a></li>
+      <li><a href="22_variables_listas_y_operadores.html" class="no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li><a href="23_estructuras_condicionales_y_bucles.html" class="no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li><a href="24_funciones.html" class="no-ch">2.4.- Funciones</a></li>
+      <li><a href="25_mdulos.html" class="no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li><a href="3_practicamos_con_python.html" class="no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_introduccin_a_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_variables_listas_y_operadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.1.- Primeros pasos</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_preknowledge" id="id1551">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_preknowledge.png)"><h1 class="iDeviceTitle">Generalidades</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1551_783_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><span style="color: #000000;">Vamos a exponer algunos aspectos generales&nbsp;sobre Python que resultan de vital importancia para poder escribir código en este lenguaje.</span></p>
+<ul style="list-style-type: square;">
+<li style="text-align: justify;"><span style="color: #000000;"><strong>Sensible a mayúsculas y minúsculas:</strong>&nbsp;Python es un lenguaje que diferencia entre&nbsp;mayúsculas y minúsculas, esto significa: For es diferente de for, nombre es diferente de&nbsp;Nombre, etc.</span></li>
+<li style="text-align: justify;"><span style="color: #000000;"><strong>Sintaxis:</strong>&nbsp;la sintaxis de Python es muy parecida al lenguaje natural o pseudocódigo, lo que hace que sea relativamente fácil de leer.&nbsp;Python no soporta el uso de&nbsp;<strong>$</strong>&nbsp;ni hace falta terminar las líneas con<strong>&nbsp;;</strong>&nbsp;como en otros lenguajes, y tampoco hay que usar<strong>&nbsp;{}&nbsp;</strong>en estructuras de control como en el <strong>if.&nbsp;</strong>Pero se puede usar el punto y coma<strong>&nbsp;;</strong>&nbsp;para tener dos sentencias en la misma línea.</span></li>
+<li style="text-align: justify;"><span style="color: #000000;"><span style="color: #000000;"><strong>Múltiples líneas:</strong> e</span></span>n algunas situaciones se puede dar el caso de que queramos tener una sola instrucción en varias línea de código. Uno de los motivos principales podría ser que fuera&nbsp;demasiado larga. Haciendo uso de <strong>\</strong> se puede&nbsp;romper el código en varias líneas, lo que en determinados casos hace que el código sea mucho más legible.</li>
+<li style="text-align: justify;"><span style="color: #000000;"><strong>Bloques de código:</strong>&nbsp;hay determinadas instrucciones (for, while, id, elif, else, def, try, except)&nbsp;que tienen por objetivo ejecutar un conjunto de instrucciones que están relacionadas entre sí,&nbsp;a estas instrucciones se le llaman bloque de código. Las instrucciones que definen el comienzo del bloque de código, deben terminar en el carácter&nbsp;de los 2 puntos (:).</span></li>
+<li style="text-align: justify;"><span style="color: #000000;"><strong>Indentación:</strong>&nbsp;es la forma que tiene Python de realizar bloques de código. Se llama así una&nbsp;especie de sangría antes del texto que se establece para clarificar la escritura del código.<br></span></li>
+</ul>
+<p style="text-align: justify;"><span style="color: #000000;">Veámoslo mejor con un ejemplo:</span></p>
+<p style="text-align: center;"><span style="color: #000000;"><img src="img0.6.png" width="901" height="143"></span></p>
+<p style="text-align: justify;"><span style="color: #000000;">En la línea 1 se ha usado una instrucción que lleva implícita la ejecución de un bloque de&nbsp;código, por ese motivo esa instrucción finaliza en :<br>Las líneas 2, 3, y 4 forman el bloque de código asociado a la instrucción de la línea 1. Estas&nbsp;líneas están asociadas porque están desplazadas unos espacios hacia la derecha con respecto&nbsp;a la línea 1.&nbsp;</span><span style="color: #000000;">Aunque no es obligatorio, se ha acordado que la indentación estándar sea de 4 espacios.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">La indentación es una práctica habitual en la mayoría de lenguajes de programación porque&nbsp;mejora la lectura del código, es una buena forma de visualizar las líneas que están&nbsp;relacionadas entre sí y las que están incluidas, unas dentro de otras. Sin embargo, en Python&nbsp;es una regla para escribir el código, es decir, no existen otros caracteres para agrupar código,&nbsp;necesariamente hay que hacerlo a través de la indentación. </span></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_preknowledge" id="id1554">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_preknowledge.png)"><h1 class="iDeviceTitle">Palabras reservadas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1554_1136_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Las&nbsp;<strong>palabras reservadas&nbsp;o&nbsp;palabras clave&nbsp;</strong>de un lenguaje de programación son las que forman parte del lenguaje y tienen un significado dentro de él.</p>
+<p>Por tanto,&nbsp;sólo puedes usar estas palabras para que funcionen con el objetivo para el que fueron diseñadas. Esto quiere decir que por ejemplo&nbsp;no puedes crear una variable cuyo identificador sea&nbsp;global, porque&nbsp;global&nbsp;ya tiene un significado predefinido en el lenguaje.</p>
+<p style="text-align: justify;">Ejemplos comunes de palabras reservadas en Python:</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;">Control de flujo:&nbsp;<strong>if,&nbsp;else,&nbsp;elif</strong>&nbsp;(condicionales);&nbsp;<strong>for,&nbsp;while</strong>&nbsp;(bucles);&nbsp;<strong>break,&nbsp;continue</strong>&nbsp;(control de bucles);&nbsp;<strong>pass</strong>&nbsp;(instrucción nula).</li>
+<li style="text-align: justify;">Valores y tipos:&nbsp;<strong>True,&nbsp;False</strong>&nbsp;(booleanos);&nbsp;<strong>None</strong>&nbsp;(valor nulo).</li>
+<li style="text-align: justify;">Operadores lógicos:&nbsp;<strong>and,&nbsp;or,&nbsp;not</strong>.</li>
+<li style="text-align: justify;">Definición y función:&nbsp;<strong>def&nbsp;</strong>(definir funciones);&nbsp;<strong>class&nbsp;</strong>(definir clases);&nbsp;<strong>return</strong>&nbsp;(devolver un valor de una función).</li>
+<li style="text-align: justify;">Módulos y excepciones:&nbsp;<strong>import,&nbsp;from</strong>&nbsp;(importar módulos);&nbsp;<strong>try,&nbsp;except,&nbsp;finally,&nbsp;raise</strong>&nbsp;(manejo de excepciones).</li>
+<li style="text-align: justify;">Identidad y pertenencia:&nbsp;<strong>is,&nbsp;in.</strong></li>
+<li style="text-align: justify;">Gestión de contexto:&nbsp;<strong>with,&nbsp;as</strong>.</li>
+<li style="text-align: justify;">Concurrencia:&nbsp;<strong>async,&nbsp;await</strong>.</li>
+</ul>
+
+<p style="text-align: justify;">¿Cómo obtener el listado completo?</p>
+<p style="text-align: justify;">Puedes ver el listado completo de las palabras reservadas directamente desde Python utilizando el módulo<strong>&nbsp;keyword:</strong>&nbsp;</p>
+<p style="text-align: center;"><img src="img0.7.png" width="1001" height="207"></p>
+
+
+
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id19">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_preknowledge.png)"><h1 class="iDeviceTitle">Comentarios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_1609_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Cuando escribimos programas, a veces es útil añadir notas o explicaciones para entender mejor el código, especialmente si lo revisamos más adelante o si otras personas van a leerlo. Estas notas se llaman comentarios. Los <strong>comentarios </strong>son líneas de texto que el ordenador no ejecuta, es decir, no afectan al funcionamiento del programa. Son como pequeños recordatorios o explicaciones dentro del código.</p>
+<p style="text-align: justify;">Los comentarios se inician con <strong>#</strong> y todo lo que vaya después en la misma línea será considerado un comentario.</p>
+<p style="text-align: justify;">Al igual que en otros lenguajes de programación, podemos también comentar varias líneas de código. Para ello es necesario hacer uso de triples comillas bien sean simples<strong> '''</strong> o dobles<strong> """</strong>. Es necesario usarlas para abrir el bloque del comentario y para cerrarlo.</p>
+<p style="text-align: center;"><img src="img0.10.png" width="1003" height="136" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_preknowledge.png)"><h1 class="iDeviceTitle">Mostrando datos en pantalla y pedir datos al usuario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_1610_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Cuando programamos, la interacción con el usuario es muy importante porque nos permite mostrarle datos al usuario (output), y también leer datos que el usuario introduce por el teclado (input). Python facilita enormemente este proceso, haciendo de las tareas de entrada/salida un trabajo realmente simple.</p>
+<p style="text-align: justify;">Python utiliza la función <strong>print()</strong> para mostrar datos en la pantalla. Esta función es muy flexible y permite mostrar texto, variables y resultados de expresiones de manera fácil.</p>
+<p style="text-align: center;"><img src="img0.14.png" width="1010" height="43" /></p>
+<p>Donde:</p>
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>valor1, valor2,</strong> …: los valores que se desean mostrar. Pueden ser cadenas de texto, números, variables, etc.</li>
+<li style="text-align: justify;"><strong>sep:</strong> especifica el separador entre los valores (por defecto es un espacio).</li>
+<li style="text-align: justify;"><strong>end:</strong> especifica lo que se muestra al final de la salida (por defecto es un salto de línea).</li>
+</ul>
+<p>Veamos un ejemplo práctico de su uso:</p>
+<p style="text-align: center;"><img src="img1.8.png" width="999" height="301" /></p>
+<p style="text-align: center;">  </p>
+<p style="text-align: justify;">La función<strong> input()</strong>, por su parte, se utiliza para leer datos introducidos por el usuario desde el teclado. Esta función siempre devuelve una cadena de texto, por lo que es necesario convertir los datos al tipo adecuado si se espera un valor numérico.</p>
+<p style="text-align: center;"><img src="img2.8.png" width="1001" height="330" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_introduccin_a_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_variables_listas_y_operadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

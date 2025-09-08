@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4.- Funciones | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li class="current-page-parent"><a href="2_introduccin_a_python.html" class="current-page-parent daddy">2.- Introducción a Python</a>
+   <ul>
+      <li><a href="21_primeros_pasos.html" class="no-ch">2.1.- Primeros pasos</a></li>
+      <li><a href="22_variables_listas_y_operadores.html" class="no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li><a href="23_estructuras_condicionales_y_bucles.html" class="no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li id="active"><a href="24_funciones.html" class="active no-ch">2.4.- Funciones</a></li>
+      <li><a href="25_mdulos.html" class="no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li><a href="3_practicamos_con_python.html" class="no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="23_estructuras_condicionales_y_bucles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_mdulos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4.- Funciones</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1566">
+<div class="iDevice emphasis0" >
+<div id="ta1566_791_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="retor_escolares_movimientoboca_largo.gif" alt="Reto" title="Reto" style="float: left; margin: 20px;" width="250" height="250"></p>
+<p style="text-align: justify;">Una <strong>función</strong>&nbsp;es un bloque de código que realiza una tarea específica y que puedes reutilizar en cualquier momento de tu programa. Es como una receta en un libro de cocina: la escribes una vez y puedes usarla tantas veces como quieras sin tener que repetir todos los pasos.</p>
+<p style="text-align: justify;"><strong>¿Cuándo es necesario crear una función?</strong></p>
+<p style="text-align: justify;">Las funciones nos ayudan a organizar el código de nuestra aplicación. Si nuestro programa&nbsp;comienza a tener una extensión considerable, será recomendable separar nuestro código en&nbsp;funciones que cada una de ellas realice una tarea determinada del programa.</p>
+<p style="text-align: justify;">En otras ocasiones, hay una cierta tarea que hay que repetir en múltiples ocasiones dentro del&nbsp;programa, para estos casos, en lugar de repetir el código, se debe crear una función que haga&nbsp;dicha tarea y llamar a la función cada vez que necesitemos esa funcionalidad.</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_download" id="id1568">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_download.png)"><h1 class="iDeviceTitle">Funciones en Python</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1568_1132_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Anteriormente hemos usado funciones nativas que vienen con Python como&nbsp;<strong>print() </strong>o <strong>input()</strong>, pero al igual que en otros lenguajes de programación, también podemos definir&nbsp;nuestras propias funciones en Python.</p>
+<p style="text-align: justify;"><strong>¿Cómo definir nuestras funciones?&nbsp;</strong></p>
+<p style="text-align: justify;">Las funciones debemos definirlas al principio de nuestro archivo, de esta forma estarán&nbsp;disponibles en el resto del código para poder utilizarlas.</p>
+<p style="text-align: justify;">Las funciones se definen como un bloque de código que comienza con la palabra reservada <strong>def</strong>,&nbsp;y tiene la siguiente apariencia:</p>
+<p><img src="img0.21.png" width="999" height="177" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;"><strong>def</strong>: palabra clave para iniciar la definición de una función.&nbsp;&nbsp;</li>
+<li style="text-align: justify;"><strong>nombrefuncion</strong>: el nombre que le das a tu función.&nbsp;&nbsp;</li>
+<li style="text-align: justify;"><strong>parametro1, parametro2</strong>: las variables que recibe la función como entrada, también conocidas como argumentos.&nbsp;&nbsp;</li>
+<li style="text-align: justify;"><strong>:</strong>&nbsp;indica el final de la línea de definición.&nbsp;&nbsp;</li>
+<li style="text-align: justify;"><strong>Cuerpo de la función (instrucciones)</strong>: el código que se ejecuta, con indentación para indicar qué instrucciones pertenecen a la función.&nbsp;&nbsp;</li>
+<li><strong>return</strong>: devuelve un valor desde la función al lugar donde fue llamada.&nbsp;Si una función no tiene&nbsp;return, devuelve&nbsp;None&nbsp;por defecto.&nbsp;</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_download" id="id1570">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_download.png)"><h1 class="iDeviceTitle">Pasando argumentos de entrada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1570_1133_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Empecemos por la función más sencilla de todas. Una función sin parámetros de entrada ni parámetros de salida.</p>
+<p><img src="img0.22.png" width="994" height="63" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: justify;">Aquí hemos definido una función llamada <strong>di_hola</strong> que, al ser llamada, mostrará un mensaje de saludo.</p>
+<p style="text-align: justify;">Para utilizar la función que hemos creado, simplemente escribimos su nombre seguido de paréntesis:</p>
+<p style="text-align: center;"><img src="img1.14.png" width="1002" height="155"></p>
+
+<p style="text-align: justify;">Vamos a complicar un poco las cosas pasando un argumento de entrada. Ahora si pasamos como entrada un nombre, se imprimirá Hola y el nombre.</p>
+<p style="text-align: center;"><img src="img2.13.png" width="999" height="177"></p>
+<p style="text-align: justify;">Ahora puedes llamar a la función con diferentes nombres, para que salude a todos ellos.</p>
+
+<p style="text-align: justify;">Las funciones también&nbsp;pueden realizar cálculos y devolver un resultado&nbsp;usando la palabra clave<strong>&nbsp;return.&nbsp;</strong>Veamos cómo:</p>
+<p style="text-align: center;"><img src="img3.6.png" width="999" height="157"></p>
+<p style="text-align: justify;">No olvides el orden de ejecución de cada línea de código cuando usas funciones:</p>
+<p style="text-align: center;"><img src="img4.5.png" width="378" height="258" alt=""></p>
+
+<p style="text-align: justify;">Una vez que ya tenemos nuestras propias funciones creadas, tal vez alguien se interese en ellas y podamos compartírselas. Las funciones pueden ser muy complejas, y leer código ajeno no es tarea fácil. Es por ello por lo que es importante&nbsp;<strong>documentar&nbsp;las funciones</strong>. Es decir, añadir comentarios para indicar como deben ser usadas.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="23_estructuras_condicionales_y_bucles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_mdulos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

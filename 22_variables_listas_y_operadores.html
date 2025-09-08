@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.2.- Variables, listas y operadores | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li class="current-page-parent"><a href="2_introduccin_a_python.html" class="current-page-parent daddy">2.- Introducción a Python</a>
+   <ul>
+      <li><a href="21_primeros_pasos.html" class="no-ch">2.1.- Primeros pasos</a></li>
+      <li id="active"><a href="22_variables_listas_y_operadores.html" class="active no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li><a href="23_estructuras_condicionales_y_bucles.html" class="no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li><a href="24_funciones.html" class="no-ch">2.4.- Funciones</a></li>
+      <li><a href="25_mdulos.html" class="no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li><a href="3_practicamos_con_python.html" class="no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="21_primeros_pasos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="23_estructuras_condicionales_y_bucles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.2.- Variables, listas y operadores</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_wikipedia" id="id1557">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_wikipedia.png)"><h1 class="iDeviceTitle">Variables</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1557_780_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Las <strong>variables</strong> son un almacén donde guardar&nbsp;una información y que en cualquier momento&nbsp;podemos recuperarla para volver a utilizarla en otras partes del código.</p>
+<p style="text-align: justify;">Para declarar una variable hay que ponerle un nombre y asignarle un valor.&nbsp;El nombre de las variables deben cumplir&nbsp;ciertas reglas:</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;">No deben se palabras reservadas de Python.</li>
+<li style="text-align: justify;">Deben comenzar por una letra.</li>
+<li style="text-align: justify;">No pueden contener espacios, ni caracteres&nbsp;extraños.</li>
+<li style="text-align: justify;">Python hace distinción entre mayúsculas y&nbsp;minúsculas.</li>
+</ul>
+<p>Por ejemplo, puedes crear una una variable llamada <strong>temperatura</strong> de la siguiente manera:</p>
+<p style="text-align: center;"><img src="img0.11.png" width="1013" height="37"></p>
+<p style="text-align: justify;">Las variables pueden contener diferentes tipos de datos, como números, texto o valores de verdadero o falso. Es importante seguir ciertas reglas al asignar valores para que Python entienda correctamente el código.</p>
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;">Si necesitas guardar un&nbsp;<strong>número,</strong> simplemente lo escribes. Para los números&nbsp;decimales, en Python&nbsp;se utiliza el punto para separar la parte entera de la decimal.&nbsp;</li>
+<li style="text-align: justify;">Para guardar<strong>&nbsp;texto</strong>, como palabras o frases,&nbsp;escribimos el contenido entre comillas simples o dobles.</li>
+<li style="text-align: justify;">En el caso de las <strong>variables&nbsp;booleanas&nbsp;</strong>solo pueden ser&nbsp;True&nbsp;(verdadero) o&nbsp;False&nbsp;(falso). Se usan para representar respuestas de sí o no, o estados como encendido y apagado.</li>
+</ul>
+<p>Por ejemplo:</p>
+<p><img src="img1.5.png" width="998" height="217" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: justify;">Podemos por ejemplo asignar el mismo valor a diferentes variables con el siguiente código.&nbsp;O también podemos asignar varios valores separados por coma.</p>
+<p style="text-align: center;"><img src="img2.5.png" width="1001" height="104"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_wikipedia" id="id23">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_wikipedia.png)"><h1 class="iDeviceTitle">Alcance de las variables</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta23_1611_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Python clasifica los alcances de acuerdo con el modelo <strong>LEGB</strong>, que determina el orden en que se buscan las variables. Las siglas LEGB corresponden a:</p>
+<ul>
+<li><strong>Local:</strong> Variables definidas dentro de una función o bloque, accesibles únicamente dentro de ese contexto. Se crean al inicio de la ejecución de la función y desaparecen cuando esta termina.</li>
+</ul>
+<p><img src="img0.15.png" width="1000" height="185" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">En este caso, la variable <strong>mensaje </strong>se define y utiliza dentro de la función <strong>saludo</strong>. Fuera de esta función, la variable no existe y no se puede acceder.</p>
+<ul>
+<li><strong>Enclosing:</strong> Se refiere a las variables definidas en una función exterior que encapsula otra función. Estas variables no son locales para la función más interna, pero tampoco son globales.</li>
+</ul>
+<p><img src="img1.9.png" width="1002" height="281" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Salida: Hola desde la función exterior</p>
+<p style="text-align: justify;">En este caso, mensaje no es ni local para <strong>funcion_interior</strong> ni global, sino que pertenece al alcance de <strong>funcion_exterior</strong>. Este es un ejemplo de una variable con alcance enclosing.</p>
+<ul>
+<li style="text-align: justify;"><strong>Global:</strong> Variables definidas en el nivel superior del script o programa, fuera de cualquier función. Son accesibles en todo el archivo, pero pueden ser modificadas dentro de una función solo si se usa la palabra clave <strong>global</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="img2.9.png" width="999" height="252" /></p>
+<p>Salida: Hola desde el alcance global Hola desde el alcance global</p>
+<p style="text-align: justify;">En este caso, <strong>mensaje</strong> se define fuera de cualquier función, por lo que es global y puede ser utilizada tanto dentro como fuera de las funciones.</p>
+<ul>
+<li><strong>Built-in:</strong> Variables y funciones predefinidas de Python que están disponibles en cualquier parte del código, como <strong>len(), range() y print().</strong></li>
+</ul>
+<p style="text-align: center;"><strong><img src="img3.3.png" width="1001" height="167" /></strong></p>
+<p>Salida: La raíz cuadrada de 16 es 4.0</p>
+<p style="text-align: justify;">En este caso, utilizamos una función built-in del módulo estándar math, que amplía las funcionalidades predefinidas de Python.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_wikipedia" id="id20">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_wikipedia.png)"><h1 class="iDeviceTitle">Listas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta20_1610_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Las <strong>listas</strong> son un tipo especial de variable que nos permite guardar varios valores del mismo tipo en una sola variable.</p>
+<p style="text-align: justify;">Se declaran usando corchetes <strong>[ ]</strong>, con o sin ningún valor en su interior. En caso de asignar valores iniciales, éstos van separados por comas.</p>
+<p>Por ejemplo, puedes usar una lista para guardar tus números favoritos:</p>
+<p style="text-align: center;"><img src="img0.12.png" width="1000" height="169" /></p>
+<p style="text-align: justify;">  </p>
+<p style="text-align: justify;">Para acceder a uno de los elementos de la lista hay que escribir su posición en la lista entre corchetes. Es importante tener en cuenta que el primer elemento de la lista corresponde a la posición 0.</p>
+<p style="text-align: justify;">Por ejemplo, para mostrar en la matriz la de la micro:bit el valor del primer elemento de la lista puedes usar este código:</p>
+<p style="text-align: center;"><img src="img1.6.png" width="997" height="73" /></p>
+<p>También se pueden acceder a varios de los datos de la lista como podemos observar en los siguientes ejemplos:</p>
+<p style="text-align: center;"><img src="img5.1.png" width="1000" height="395" /></p>
+<p style="text-align: center;">   </p>
+<p style="text-align: justify;">Para añadir un elemento al final de la lista se puede usar el método <strong>append()</strong> y colocar entre paréntesis el nuevo valor:</p>
+<p style="text-align: center;"><img src="img2.4.png" width="997" height="69" /></p>
+<p style="text-align: justify;">Para eliminar un elemento de la lista se puede usar el método <strong>remove() </strong>y colocamos entre paréntesis el valor a eliminar:</p>
+<p><img src="img3.2.png" width="1008" height="59" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">Para insertar un elemento de la lista se puede usar el método <strong>insert(posición, valor) </strong>y colocamos entre paréntesis la posición en que queremos la inserción y  el valor a insertar:</p>
+<p style="text-align: center;"><img src="img4.2.png" width="1004" height="109" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_math" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_math.png)"><h1 class="iDeviceTitle">Operadores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_1609_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Python puede realizar las operaciones básicas suma(<strong>+</strong>), resta(<strong>-</strong>), multiplicación(<strong>*</strong>) y división(<strong>/</strong>) y además, sabe aplicar correctamente la prioridad de unas operaciones sobre otras.</p>
+<p>También hace algunas operaciones más como la potenciación(<strong>**</strong>), división entera(<strong>//</strong>) y el resto de la división(<strong>%</strong>), esta última también recibe el nombre de módulo o residuo. </p>
+<p><img src="img0.13.png" width="1001" height="414" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>   </p>
+<p style="text-align: justify;">Vamos a seguir dándole algunas órdenes más a Python, que aunque nos puedan parecer un poco extrañas, ya veréis como más tarde resultarán útiles.</p>
+<p style="text-align: center;"><img src="img1.7.png" width="1002" height="246" /></p>
+<p style="text-align: justify;">En el ejemplo hemos sumado 2 textos, visto así, esto te debería resultar un poco extraño. La explicación es que realmente no hemos sumado, lo que hemos hecho ha sido concatenar (unir) 2 cadenas de texto y hemos obtenido una nueva cadena texto con todo el texto.</p>
+<p style="text-align: justify;">Siguiendo la misma lógica anterior, multiplicar un número por un texto, es concatenar varias veces el texto consigo mismo.</p>
+<p style="text-align: justify;">  </p>
+<p>Os recuerdo que además de los operadores matemáticos existen otro tipo de operadores. Veamos una tabla con los <strong>principales operadores</strong>:</p>
+<p><img src="img2.7.png" width="656" height="598" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><strong>Notas:</strong></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;">Dentro de los operadores de comparación, Python también permite operadores ternarios, es decir, expresiones así: <strong>1 &lt;= x &lt;= 10</strong>. Esta forma de escribirlo es similar a como se haría en matemáticas y es equivalente a: <strong>x&gt;=1 and x&lt;=10</strong>, sin embargo resulta más simplificada y más intuitiva de leer.</li>
+<li style="text-align: justify;">En los lenguajes de programación, el símbolo = debe entenderse como una asignación, no como una igualdad matemática. La expresión: <strong>x = x +1</strong>, en matemáticas no tendría mucho sentido puesto que sería afirmar que 1 = 0, sin embargo, en cualquier lenguaje de programación, es totalmente válida y debe entenderse como asígnale a x el valor que tenga en este momento más una unidad.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="21_primeros_pasos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="23_estructuras_condicionales_y_bucles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

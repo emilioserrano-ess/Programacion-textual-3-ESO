@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.3.- Estructuras condicionales y bucles | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li class="current-page-parent"><a href="2_introduccin_a_python.html" class="current-page-parent daddy">2.- Introducción a Python</a>
+   <ul>
+      <li><a href="21_primeros_pasos.html" class="no-ch">2.1.- Primeros pasos</a></li>
+      <li><a href="22_variables_listas_y_operadores.html" class="no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li id="active"><a href="23_estructuras_condicionales_y_bucles.html" class="active no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li><a href="24_funciones.html" class="no-ch">2.4.- Funciones</a></li>
+      <li><a href="25_mdulos.html" class="no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li><a href="3_practicamos_con_python.html" class="no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="22_variables_listas_y_operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="24_funciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.3.- Estructuras condicionales y bucles</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_share" id="id1589">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Estructuras condicionales</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1589_1139_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">En programación, un&nbsp;<strong>condicional&nbsp;</strong>es&nbsp;una instrucción que permite que el programa tome decisiones y realice acciones diferentes según ciertas condiciones. Es como hacer una pregunta de «sí» o «no» y actuar dependiendo de la respuesta.</p>
+<p style="text-align: justify;">En Python, los condicionales se escriben utilizando la palabra clave&nbsp;<strong>if</strong>. Después de&nbsp;<strong>if</strong>, escribimos la condición que queremos evaluar y terminamos la línea con dos puntos<strong>&nbsp;:</strong>. Las acciones que queremos que se ejecuten si la condición es verdadera las escribimos en la siguiente línea, dejando un espacio al inicio (<strong>sangría</strong>) para indicar que pertenecen al bloque del&nbsp;<strong>if</strong>.</p>
+<p style="text-align: justify;">Por ejemplo, puedes utilizar un condicional para evaluar si la temperatura es igual a 21º C y, en caso de de que lo sea, ejecutar que se apague la calefacción y se encienda un led. Para ello, debes utilizar esta programación:</p>
+<p style="text-align: center;"><img src="img0.16.png" width="1000" height="99"></p>
+<p style="text-align: justify;">Recuerda que en Python se usa un solo igual cuando se quiere asignar un valor a una variable y se usan dos iguales cuando se quiere verificar si se cumple una condición de igualdad.</p>
+<p style="text-align: justify;">También se pueden crear condiciones compuestas usando las palabra <strong>and</strong> y <strong>or</strong>.</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;"><strong>and:</strong> todas las condiciones deben ser verdaderas para que se ejecute el bloque de código.</li>
+<li style="text-align: justify;"><strong>or:</strong> basta con que una de las condiciones sea verdadera para que se ejecute el bloque.</li>
+</ul>
+<p style="text-align: justify;">Por ejemplo, apagar la calefacción y encender un led si la temperatura es de 21º C y es de día:</p>
+<p style="text-align: center;"><img src="img1.10.png" width="995" height="96"></p>
+<p style="text-align: justify;">Si queremos comprobar varias condiciones una tras otra, podemos usar&nbsp;<strong>elif&nbsp;</strong>(abreviatura de «else if»). Si ninguna de las condiciones anteriores se cumple, podemos usar&nbsp;<strong>else</strong>&nbsp;para definir qué hacer en ese caso.</p>
+<p style="text-align: justify;">Por ejemplo:</p>
+<p style="text-align: center;"><img src="img2.10.png" width="1001" height="205"></p>
+<p style="text-align: justify;">En Python, es muy importante respetar la sangría al escribir condicionales. Las líneas de código que van&nbsp;dentro de un&nbsp;<strong>if,&nbsp;elif&nbsp;o&nbsp;else&nbsp;</strong>deben empezar con un espacio o tabulación. Esto le indica a Python qué instrucciones pertenecen a cada bloque.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_share" id="id1590">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Bucles</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1590_1132_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los&nbsp;<strong>bucles</strong>&nbsp;son herramientas que nos permiten repetir una o varias instrucciones varias veces sin tener que escribir el mismo código una y otra vez. Si quisiéras dar diez palmadas; en lugar de decir «dar una palmada» diez veces, utilizas un bucle que repite esa acción por ti.</p>
+<p>Existen dos tipos principales de bucles en Python:&nbsp;<strong>while</strong>&nbsp;y&nbsp;<strong>for</strong>.</p>
+<p style="text-align: justify;">El bucle&nbsp;<strong>while&nbsp;</strong>repite el código que tiene dentro mientras se cumple una condición. Es decir, seguirá ejecutándose hasta que esa condición deje de ser verdadera.&nbsp;&nbsp;Llamaremos&nbsp;iteración&nbsp;a una ejecución completa del bloque de código.</p>
+<p style="text-align: justify;">Las condiciones en los bucles&nbsp;while&nbsp;se escriben igual que en las estructuras condicionales&nbsp;if.</p>
+<p style="text-align: justify;">Por ejemplo, se puede usar este bucle para programar un robot que avance mientras que la distancia a la pared sea menor que 1 cm y, cuando esta condición deje de cumplirse, se detenga:</p>
+<p style="text-align: center;"><img src="img0.17.png" width="1004" height="98"></p>
+<p style="text-align: justify;">El bucle&nbsp;<strong>for&nbsp;</strong>se utiliza para repetir una parte del código un número específico de veces o para recorrer todos los elementos de una lista.</p>
+<p style="text-align: justify;">Si queremos que una acción se repita, por ejemplo, 5 veces, usamos el bucle&nbsp;<strong>for</strong>&nbsp;con la función&nbsp;<strong>range()</strong>.&nbsp;La función <strong>range</strong> tiene la siguiente sintaxis:&nbsp;<strong>range(valorinicial, valorfinal, incremento)</strong>.&nbsp;Incremento es un parámetro opcional que indica el incremento de la variable del bucle en cada iteración. Si se omite el incremento, por defecto se establece a 1.</p>
+<p style="text-align: justify;">Por ejemplo, se pude usar este bucle para conseguir que el led que se encuentra en las coordenadas (0,0) de la matriz LED de la placa micro:bit, parpadee 5 veces:</p>
+<p style="text-align: center;"><img src="img1.11.png" width="1002" height="151"></p>
+<p style="text-align: justify;">La palabra<strong> index</strong> del bucle es una variable que se puede reutilizar. Sin embargo, es necesario conocer que su valor es 0 cuando se ejecuta la primera repetición, y va aumentando una unidad cada ejecución.</p>
+<p style="text-align: justify;">Se puede usar esta variable, por ejemplo, para mostrar una cuenta atrás en la matriz LED:</p>
+<p style="text-align: center;"><img src="img2.11.png" width="1000" height="67"></p>
+<p style="text-align: justify;">En este caso, al haber 5 repeticiones, la cuenta comenzará por 0 hasta llegar a 4.</p>
+<p style="text-align: justify;">Es habitual llamar<strong> index</strong> a esta variable, pero se loe puede dar cualquier nombre. En algunos casos, si es necesario renombrar esta variable, por ejemplo, cuando se requiere programar un bucle <strong>for</strong> dentro de otro. En este caso, ambas variables del bucle deben llamarse de forma diferente.</p>
+<p style="text-align: center;"><img src="img3.4.png" width="999" height="66"></p>
+<p style="text-align: justify;">Además, Python también permite usar el bucle <strong>for</strong> para recorrer una lista y acceder a sus elementos uno a uno.</p>
+<p style="text-align: justify;">Por ejemplo, se pueden mostrar en la matriz LED los elementos de una lista de la compra utilizando este código:</p>
+<p style="text-align: center;"><img src="img4.3.png" width="1000" height="117"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="22_variables_listas_y_operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="24_funciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

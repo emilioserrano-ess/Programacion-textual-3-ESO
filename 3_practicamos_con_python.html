@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.- Practicamos con Python | Programación textual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="ESS" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación textual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">PROGRAMACIÓN TEXTUAL</a></li>
+   <li><a href="1_lenguaje_visual_vs_lenguaje_textual.html" class="no-ch">1.- Lenguaje visual vs lenguaje textual</a></li>
+   <li><a href="2_introduccin_a_python.html" class="daddy">2.- Introducción a Python</a>
+   <ul class="other-section">
+      <li><a href="21_primeros_pasos.html" class="no-ch">2.1.- Primeros pasos</a></li>
+      <li><a href="22_variables_listas_y_operadores.html" class="no-ch">2.2.- Variables, listas y operadores</a></li>
+      <li><a href="23_estructuras_condicionales_y_bucles.html" class="no-ch">2.3.- Estructuras condicionales y bucles</a></li>
+      <li><a href="24_funciones.html" class="no-ch">2.4.- Funciones</a></li>
+      <li><a href="25_mdulos.html" class="no-ch">2.5.- Módulos</a></li>
+      <li><a href="26_microbit_y_python.html" class="no-ch">2.6- Microbit y Python</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="3_practicamos_con_python.html" class="active no-ch">3.- Practicamos con Python</a></li>
+   <li><a href="4_nuestros_proyectos.html" class="no-ch">4.- Nuestros proyectos</a></li>
+   <li><a href="5_sacamos_conclusiones.html" class="no-ch">5.- Sacamos conclusiones</a></li>
+   <li><a href="i_gua_didctica.html" class="no-ch">I. Guía didáctica</a></li>
+   <li><a href="ii_crditos.html" class="no-ch">II. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="26_microbit_y_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_nuestros_proyectos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.- Practicamos con Python</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1492">
+<div class="iDevice emphasis0" >
+<div id="ta1492_117_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="retor_escolares_conbocadillo.gif" alt="Retor" title="Retor" style="float: left; margin-right: 10px; margin-left: 10px;" width="250" height="250"><span style="font-size: 18pt;"><em><span style="color: #ff9900; font-family: 'comic sans ms', sans-serif;"><strong>Es hora de comprobar qué has aprendido sobre la programación con Python.</strong></span></em></span></p>
+<p style="text-align: center;"><span style="font-size: 18pt;"><em><span style="color: #ff9900; font-family: 'comic sans ms', sans-serif;"><strong>&nbsp;&nbsp;</strong></span></em></span></p>
+<p>Para que puedas practicar sobre los conceptos de variables, constantes, operadores, expresiones y la entrada/salida de datos usando Python, aquí tienes una batería de ejercicios resueltos con explicaciones detalladas de cada uno.</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id1493">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 1: calcular la suma de dos números</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1493_546_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Escribe un programa que pida al usuario dos números y luego muestre la suma de ambos.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.23.png" width="1002" height="234"></p>
+<p style="text-align: justify;">Primero pedimos al usuario que introduzca dos números. Usamos la función&nbsp;input()&nbsp;para obtener los valores, y&nbsp;float()&nbsp;para convertirlos en números decimales. Luego, sumamos ambos números y mostramos el resultado utilizando una F-string en&nbsp;print()&nbsp;para una salida más legible.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id1494">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 2: calcular el área de un círculo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1494_547_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Escribe un programa que pida al usuario el radio de un círculo y calcule su área.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.24.png" width="1000" height="280"></p>
+<p style="text-align: justify;">Definimos la constante&nbsp;PI&nbsp;y pedimos el radio del círculo. Usamos la fórmula del área de un círculo πr<sup>2</sup>&nbsp;y calculamos el resultado. Luego, lo mostramos con&nbsp;print(). Para la constante PI también podíamos haber acudido al módulo math.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id1495">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 3: calcular el doble y el triple de un número</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1495_548_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida un número al usuario y muestre tanto el doble como el triple de ese número.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.25.png" width="999" height="265"></p>
+<p style="text-align: justify;">El programa solicita un número, luego calcula el doble y el triple usando operaciones de multiplicación. Posteriormente, muestra ambos resultados.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id1496">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 4: concatenar dos cadenas de texto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1496_549_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida al usuario dos frases y luego muestre ambas frases concatenadas en una sola línea.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.26.png" width="1001" height="240"></p>
+<p style="text-align: justify;">El programa solicita dos cadenas de texto al usuario y las une usando el operador de concatenación&nbsp;+. Posteriormente, muestra la cadena resultante.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id27">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 5: determinar si un número es positivo, negativo o cero</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta27_1609_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida un número al usuario y determine si es positivo, negativo o cero.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="img0.27.png" width="1001" height="261" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: justify;">Usamos una estructura condicional&nbsp;if,&nbsp;elif&nbsp;y&nbsp;else&nbsp;para verificar si el número es mayor, menor o igual a cero y mostramos el mensaje correspondiente.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id28">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 6: comprobar si un número es par o impar</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta28_1610_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida un número al usuario y determine si es par o impar.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.28.png" width="1001" height="218"></p>
+<p style="text-align: justify;">Usamos el operador módulo&nbsp;%&nbsp;para dividir el número entre 2. Si el resto es 0, el número es par; si no, es impar.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id29">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 7: contar cuántos números son mayores que 10</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta29_1611_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida cinco números y cuente cuántos de ellos son mayores que 10.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.29.png" width="998" height="284"></p>
+<p style="text-align: justify;">Usamos un bucle&nbsp;for&nbsp;para pedir cinco números al usuario y un condicional&nbsp;if&nbsp;para aumentar el contador si el número es mayor que 10.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id30">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 8: calcular la suma de los números pares del 1 al 100</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta30_1612_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que calcule la suma de todos los números pares entre 1 y 100.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.30.png" width="1001" height="261"></p>
+<p style="text-align: justify;">Usamos un bucle&nbsp;for&nbsp;para recorrer los números del 1 al 100 y un condicional&nbsp;if&nbsp;para sumar solo los números pares.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id31">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 9: encontrar el mayor de tres números</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta31_1613_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que pida tres números y determine cuál es el mayor.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.31.png" width="1000" height="375"></p>
+<p style="text-align: justify;">Usamos condiciones compuestas con operadores&nbsp;and&nbsp;para comparar los tres números y determinar cuál es el mayor.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id32">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 10: suma de dígitos de un número</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta32_1614_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Escribe un programa que pida un número entero y calcule la suma de sus dígitos.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.32.png" width="1002" height="306"></p>
+<p style="text-align: justify;">Convertimos el número en una cadena para poder recorrer sus dígitos con un bucle&nbsp;for. Cada dígito se convierte de nuevo en entero para sumarlo.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id33">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 11: imprimir los números del 1 al 10 en orden inverso</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta33_1615_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Escribe un programa que imprima los números del 1 al 10 en orden inverso.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.33.png" width="1003" height="103"></p>
+<p style="text-align: justify;">Usamos un bucle&nbsp;for&nbsp;con un tercer parámetro negativo en la función&nbsp;range()&nbsp;para contar hacia atrás desde 10 hasta 1.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id34">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 12: menú para elegir una operación matemática</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta34_1616_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que muestre un menú con tres opciones: sumar dos números, restar dos números o multiplicar dos números. El programa debe repetirse hasta que el usuario elija salir.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.34.png" width="1000" height="595"></p>
+<p style="text-align: justify;">El programa utiliza un bucle&nbsp;while&nbsp;que repite un menú de opciones hasta que el usuario elija salir. Dependiendo de la opción seleccionada, se realizan distintas operaciones matemáticas básicas.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 13: buscar un número múltiplo de 7 y menor que 100</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta35_1617_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que busque el primer número múltiplo de 7 que también sea mayor que 50 y menor que 100. El programa debe saltar los números que no son múltiplos de 7 y detenerse al encontrar el primero.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.35.png" width="997" height="169"></p>
+<p style="text-align: justify;">El bucle&nbsp;for&nbsp;recorre los números desde 51 hasta 100. Si el número no es múltiplo de 7,&nbsp;continue&nbsp;salta a la siguiente iteración. Cuando encuentra un múltiplo de 7, lo imprime y luego usa&nbsp;break&nbsp;para detener el bucle, ya que no necesitamos buscar más números.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 14: calcular el salario total de un trabajador con horas extras</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_1618_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe una función llamada&nbsp;calcular_salario&nbsp;que reciba el número de horas trabajadas y la tarifa por hora. Si las horas son mayores a 40, las horas adicionales se pagarán al 150% de la tarifa normal. La función debe devolver el salario total. Luego, llama a la función y muestra el resultado.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.36.png" width="999" height="394"></p>
+<p style="text-align: justify;">La función calcula el salario total considerando horas extra. Si el trabajador trabaja más de 40 horas, las horas adicionales se pagan a una tarifa del 150%. La función retorna el salario total y el programa lo muestra.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 15: función que devuelva el número mayor de tres valores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta37_1619_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe una función llamada&nbsp;numero_mayor&nbsp;que reciba tres números como parámetros y devuelva el mayor de ellos. Luego, muestra el resultado en el programa principal.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.37.png" width="1000" height="416"></p>
+<p style="text-align: justify;">La función compara tres números utilizando condicionales&nbsp;if&nbsp;para encontrar el mayor. Luego, retorna ese número. En el programa principal, pedimos tres números al usuario y llamamos a la función para encontrar el mayor.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 16: crear una calculadora simple con funciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_1620_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Escribe un programa que defina cuatro funciones:&nbsp;sumar(a, b),&nbsp;restar(a, b),&nbsp;multiplicar(a, b)&nbsp;y&nbsp;dividir(a, b). El programa debe permitir al usuario elegir una operación y realizar el cálculo.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.38.png" width="1001" height="593"></p>
+<p style="text-align: justify;">Creamos cuatro funciones para las operaciones básicas. Dependiendo de la elección del usuario, se llama a la función correspondiente para realizar la operación. La función&nbsp;dividir&nbsp;incluye una comprobación para evitar divisiones por cero.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejercicio 17: Mascota virtual</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_1622_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Programa una mascota virtual interactiva en Python, aplicando estructuras básicas de programación (variables, condicionales, bucles, funciones).</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Solución</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="img0.39.png" width="1000" height="686"></p>
+<p style="text-align: justify;">Ejemplo simplificado de una posible solución.</p>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="26_microbit_y_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_nuestros_proyectos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
